@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Social Media Dashboard</title>
+
+
+</head>
+
+<body id="body">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6" id="header">
+        
+      </div>
+      <div class="col-sm-12 col-md-6">
+        <div class="mode-switcher">
+          <p class="light-button show" id="light-button">Light Mode</p>
+          <p class="dark-button" id="dark-button">Dark Mode</p>
+          <!-- Rounded switch -->
+          <label class="switch" id="switch">
+            <input type="checkbox">
+            <span class="slider round" id="slider"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container card-wrapper">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3 " id="facebookdiv">
+        <div class="card-inner facebook-border">
+          <div class="social-name">
+            <div class="facebook"></div>
+            <div class="user-name" id="fbuname"></div>
+          </div>
+          <div class="followers-number" id="fbfollow"></div>
+          <div class="followers"></div>
+          <div class="update">
+            <div class="arrow-up"></div>
+            <div class="today-update" id="fbupdate"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner facebook-border">
+          <div class="social-name">
+            <div class="twitter"></div>
+            <div class="user-name" id="twitteruname"></div>
+          </div>
+          <div class="followers-number 
+          " id="twittercount" ></div>
+          <div class="followers"></div>
+          <div class="update">
+            <div class="arrow-up"></div>
+            <div class="today-update" id="twitterupdate"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner 
+       instagram-border">
+          <div class="social-name">
+            <div class="instagram"></div>
+            <div class="user-name" id="instauname"></div>
+          </div>
+          <div class="followers-number 
+          " id="instafollowcount"></div>
+          <div class="followers" id="instafollow"></div>
+          <div class="update">
+            <div class="arrow-up"></div>
+            <div class="today-update" id="instaupdate"></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner youtube-border">
+          <div class="social-name">
+            <div class="youtube"></div>
+            <div class="user-name" id="ytuname"></div>
+          </div>
+          <div class="followers-number" id="ytfollow"></div>
+          <div class="followers"></div>
+          <div class="update">
+            <div class="arrow-down"></div>
+            <div class="today-update-youtube" id="ytupdate"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="header">
+          <h1 class="title mb-4"> Overview - Today</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container card-wrapper">
+    <div class="row">
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views">Page Views</div>
+            <div class="page-update" id="fbupdate">372</div>
+          </div>
+          <div class="bottom-row">
+            <div class="facebook-1"></div>
+            <div class="update-1">
+              <div class="arrow-up"></div>
+              <div class="today-update" id="fbchange">3%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views">Commits</div>
+            <div class="page-update">012</div>
+          </div>
+          <div class="bottom-row">
+            <div class="facebook-1"></div>
+            <div class="update-1">
+              <div class="arrow-down"></div>
+              <div class="today-update-youtube">2%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views">Likes</div>
+            <div class="page-update">5462</div>
+          </div>
+          <div class="bottom-row">
+            <div class="instagram-1"></div>
+            <div class="update-1">
+              <div class="arrow-up"></div>
+              <div class="today-update 
+            ">2257%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views"> Profile Views</div>
+            <div class="page-update">52k</div>
+          </div>
+          <div class="bottom-row">
+            <div class="instagram-1"></div>
+            <div class="update-1">
+              <div class="arrow-up"></div>
+              <div class="today-update">1375%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views 
+          ">Retweets</div>
+            <div class="page-update 
+          ">117</div>
+          </div>
+          <div class="bottom-row">
+            <div class="twitter-1"></div>
+            <div class="update-1">
+              <div class="arrow-up"></div>
+              <div class="today-update">303%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views">Likes</div>
+            <div class="page-update">507</div>
+          </div>
+          <div class="bottom-row">
+            <div class="twitter-1"></div>
+            <div class="update-1">
+              <div class="arrow-up"></div>
+              <div class="today-update">553%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views">Likes</div>
+            <div class="page-update">107</div>
+          </div>
+          <div class="bottom-row">
+            <div class="youtube-1"></div>
+            <div class="update-1">
+              <div class="arrow-down"></div>
+              <div class="today-update-youtube">19%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-3">
+        <div class="card-inner-2">
+          <div class="upper-row">
+            <div class="page-views"> Total Views</div>
+            <div class="page-update">1407</div>
+          </div>
+          <div class="bottom-row">
+            <div class="youtube-1"></div>
+            <div class="update-1">
+              <div class="arrow-down"></div>
+              <div class="today-update-youtube">12%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Daniel Kavatha</a>.
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
